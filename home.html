@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <style type="text/css">
+      .top-headder {
+          background-image: url('/static/{{ h_beat }}');
+          background-size: contain;
+          color: white;
+         }
+   </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+function myFunction1() {
+  var popup = document.getElementById("myPopup1");
+  popup.classList.toggle("show");
+}
+function myFunction2() {
+  var popup = document.getElementById("myPopup2");
+  popup.classList.toggle("show");
+}
+function myFunction3() {
+  var popup = document.getElementById("myPopup3");
+  popup.classList.toggle("show");
+}
+function myFunction4() {
+  var popup = document.getElementById("myPopup4");
+  popup.classList.toggle("show");
+}
+function myFunction5() {
+  var popup = document.getElementById("myPopup5");
+  popup.classList.toggle("show");
+}
+function myFunction6() {
+  var popup = document.getElementById("myPopup6");
+  popup.classList.toggle("show");
+}
+function myFunction7() {
+  var popup = document.getElementById("myPopup7");
+  popup.classList.toggle("show");
+}
+function myFunction8() {
+  var popup = document.getElementById("myPopup8");
+  popup.classList.toggle("show");
+}
+function myFunction9() {
+  var popup = document.getElementById("myPopup9");
+  popup.classList.toggle("show");
+}
+function myFunction10() {
+  var popup = document.getElementById("myPopup10");
+  popup.classList.toggle("show");
+}
+function myFunction11() {
+  var popup = document.getElementById("myPopup11");
+  popup.classList.toggle("show");
+}
+function myFunction12() {
+  var popup = document.getElementById("myPopup12");
+  popup.classList.toggle("show");
+}
+function myFunction13() {
+  var popup = document.getElementById("myPopup13");
+  popup.classList.toggle("show");
+}
+function myFunction14() {
+  var popup = document.getElementById("myPopup14");
+  popup.classList.toggle("show");
+}
+function myFunction15() {
+  var popup = document.getElementById("myPopup15");
+  popup.classList.toggle("show");
+}
+function myFunction16() {
+  var popup = document.getElementById("myPopup16");
+  popup.classList.toggle("show");
+}
+</script>
+<style>
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
+</head>
+<body style="text-align:center">
+  
+</div>
+  
+<div class="jumbotron text-center top-headder">
+  <h1>Forsk Project</h1>
+  <p>Life Expectancy Results</p> 
+</div>
+
+<div style="background-color: #DCF4EE ;">
+  <div class="container">
+    <center>
+  <form action="{{url_for('predict_value')}}" method="POST">
+
+ <table class="table table-striped">
+
+ <tbody>
+      <tr>
+        <td> 
+         <div class="form-group">
+        <label for="Diagnosis"><div class="popup" onmouseover="myFunction()">Diagnosis
+        <span class="popuptext" id="myPopup">here is diagnnosis detail</span></label></td>
+        <td> <select id="Diagnosis" name="Diagnosis">
+      <option value="0">1</option>
+      <option value="1">2</option>
+      <option value="2">3</option>
+      <option value="3">4</option>
+      <option value="4">5</option>
+      <option value="5">6</option>
+      <option value="6">7</option>
+    </select>
+ 
+    </td>
+       </tr>
+    </div>
+
+
+    <tr>
+      <td><div class="form-group">
+    <label for="Forced vital capacity"><div class="popup" onmouseover="myFunction1()">Forced vital capacity
+        <span class="popuptext" id="myPopup1">Amount of air which can be forcibly exhaled from the lungs after taking the deepest breath possible</span></div></label></td>
+    <td> <input type="text" id="Forced vital capacity" name="Forced vital capacity"></td>
+    </tr>
+</div>
+
+<tr>
+  <td><div class="form-group">
+    <label for="Volume that has been exhaled"><div class="popup" onmouseover="myFunction2()">
+    Volume that has been exhaled<span class="popuptext" id="myPopup2">Volume that has been exhaled at the end of the first second of forced expiration</span></div></label></td>
+  <td><input type="text" id="Volume that has been exhaled" name="Volume that has been exhaled"></div></td>
+  
+</tr>
+  </div>
+    
+    <tr>
+  <td><div class="form-group">
+    <label for="performance status"><div class="popup" onmouseover="myFunction3()">Performance status<span class="popuptext" id="myPopup3">Performance status on Zubrod scale (0 for poor to 3 for good)</span></div></label></td>
+  <td><select id="Performance status" name="Performance status">
+      <option value="0">Low</option>
+      <option value="1">Medium</option>
+      <option value="2">High</option>
+    </select></td>
+  
+</tr>
+    </div>
+
+
+    <tr>
+  <td> <div class="form-group">
+    <label for="pain before surgery"><div class="popup" onmouseover="myFunction4()">
+    Pain before surgery(1-Yes,2-No)<span class="popuptext" id="myPopup4">Pain before surgery</span></label></td>
+  <td><select id="pain before surgery" name="pain before surgery">
+     <option value="0">Yes</option>
+      <option value="1">No</option>
+    </select></td>
+  
+</tr>
+    </div>
+   
+     <tr>
+  <td> <div class="form-group"><div class="popup" onmouseover="myFunction5()">
+    <label for="Haemoptysis before surgery">Haemoptysis before surgery(1-yes,2-no)<span class="popuptext" id="myPopup5">Coughing up blood, before surgery</span></label></td>
+  <td><select id="Haemoptysis before surgery" name="Haemoptysis before surgery">
+      <option value="0">Yes</option>
+      <option value="1">No</option>
+    </select></td>
+  
+</tr>
+    </div>
+    
+  
+   <tr>
+  <td>  <div class="form-group"><div class="popup" onmouseover="myFunction6()">
+    <label for="Dyspnoea before surgery">Dyspnoea before surgery(1-Yes,2-No)<span class="popuptext" id="myPopup6">Difficulty or labored breathing, before surgery</span></label></td>
+  <td><select id="Dyspnoea before surgery" name="Dyspnoea before surgery">
+      <option value="0">Yes</option>
+      <option value="1">No</option>
+    </select></td>
+  
+</tr>
+    </div>
+
+      <tr>
+  <td>  <div class="form-group">
+    <label for="Cough before surgery"><div class="popup" onmouseover="myFunction7()">Cough before surgery(1-Yes,2-No)<span class="popuptext" id="myPopup7">Symptoms of Coughing, before surgery</span></div> </label></td>
+  <td><select id="Cough before surgery" name="Cough before surgery">
+      <option value="0">Yes</option>
+      <option value="1">No</option>
+    </select></td>
+  
+</tr>
+    </div>
+
+        <tr>
+  <td>  <div class="form-group">
+    <label for="Weakness before surgery"><div class="popup" onmouseover="myFunction8()">Weakness before surgery<span class="popuptext" id="myPopup8">Weakness, before surgery </span></div>  </label></td>
+  <td><select id="Weakness before surgery" name="Weakness before surgery">
+      <option value="0">Yes</option>
+      <option value="1">No</option>
+    </select></td>
+  
+</tr>
+    </div>
+
+ <tr>
+  <td> <div class="form-group">
+    <label for="T in clinical TNM"><div class="popup" onmouseover="myFunction9()">Size of tumour<span class="popuptext" id="myPopup9">size of the original tumor, 1 (smallest) to 4 (largest)</span></div>  </label></td>
+  <td><input type="text" id="T in clinical TNM" name="T in clinical TNM"></td>
+  
+</tr>
+    </div>
+   
+   <tr>
+  <td> <div class="form-group">
+    <label for="Type 2 DM"><div class="popup" onmouseover="myFunction10()">Diabities mallitus(1-Yes,2-No)<span class="popuptext" id="myPopup10">Type 2 diabetes mellitus</span></div> </label></td>
+  <td> <select id="Type 2 DM" name="Type 2 DM">
+      <option value="0">Yes</option>
+      <option value="1">No</option>
+    </select></td>
+      </div>
+
+    <tr>
+  <td><div class="form-group">
+    <label for="MI up to 6 months"><div class="popup" onmouseover="myFunction11()">MI up to 6 months(1-Yes,2-No)<span class="popuptext" id="myPopup11">Heart  attack upto previous 6 months</span></div> </label></td>
+  <td><select id="MI up to 6 months" name="MI up to 6 months">
+      <option value="0">Yes</option>
+      <option value="1">No</option>
+    </select></td>
+  </tr>
+      </div>
+
+ <tr>
+  <td><div class="form-group">
+    <label for="PAD"><div class="popup" onmouseover="myFunction12()">peripheral arterial diseases(1-Yes,2-No)<span class="popuptext" id="myPopup12">Receive optimal blood flow </span></div> </label></td>
+  <td><select id="PAD" name="PAD">
+      <option value="0">Yes</option>
+      <option value="1">No</option>
+    </select></td>
+    </tr>
+      </div>
+    
+
+    <tr>
+  <td>
+       <div class="form-group">
+    <label for="Smoking"><div class="popup" onmouseover="myFunction13()">Smoking(1-Yes,2-No)<span class="popuptext" id="myPopup13">Smoked</span></div> </label></td>
+  <td><select id="Smoking" name="Smoking">
+      <option value="0">Yes</option>
+      <option value="1">No</option>
+    </select></td></tr>
+      </div>
+  
+   <tr>
+  <td>
+      <div class="form-group">
+    <label for="Asthma"><div class="popup" onmouseover="myFunction14()">Asthma(1-Yes,2-No)<span class="popuptext" id="myPopup14">Patient has Asthma</span></div> </label></td>
+  <td><select id="Asthma" name="Asthma">
+      <option value="0">Yes</option>
+      <option value="1">No</option>
+    </select></td></tr>
+      </div>
+
+<tr>
+  <td>
+     <div class="form-group">
+    <label for="AGE"><div class="popup" onmouseover="myFunction15()">Age<span class="popuptext" id="myPopup15">Age at surgery</span></div> </label></td>
+  <td> <input type="text" id="age" name="age"></div>
+ </td></tr>
+</div>
+<tr>
+  <td></td><td> <input type="submit" value="Submit" class="btn btn-success"></td>
+ 
+</tr>
+</tbody>
+  
+  
+  </form>
+
+</center>
+</div>
+</div>
+  <div class="alert alert-{{alert}}">
+    <strong>{{msg}}</strong>
+  </div>
+
+
+</body>
+
+</html>
